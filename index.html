@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excel Coaching Center - Learn. Practice. Achieve.</title>
+  <meta name="description" content="Excel Coaching Center provides expert guidance, personalized attention and proven strategies for JEE, NEET, Foundation, and Board Exams.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#home" class="brand-logo" id="brandLogo">
+        <div class="logo-emblem">
+          <svg class="crest-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 2L6 9V20C6 30 13 39 22 42C31 39 38 30 38 20V9L22 2Z" fill="#0C2548"/>
+            <path d="M22 6L9 11.5V20C9 28 14.8 35.5 22 38C29.2 35.5 35 28 35 20V11.5L22 6Z" fill="#143668"/>
+            <!-- Mortarboard cap -->
+            <polygon points="22,11 33,16 22,21 11,16" fill="#FBBF24"/>
+            <polygon points="16,19 16,24 22,27 28,24 28,19 22,22" fill="#F59E0B"/>
+            <rect x="31" y="16" width="1.5" height="7" fill="#FBBF24"/>
+            <circle cx="31.75" cy="24" r="1.5" fill="#FBBF24"/>
+            <!-- Open Book Base -->
+            <path d="M14 29C17 27.5 20 28.5 22 30C24 28.5 27 27.5 30 29V32C27 30.5 24 31.5 22 33C20 31.5 17 30.5 14 32V29Z" fill="#FFFFFF"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">EXCEL</span>
+          <span class="brand-sub">COACHING CENTER</span>
+          <span class="brand-tagline">Learn. Practice. <span class="tagline-highlight">Achieve.</span></span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active" id="navHome">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" id="navAbout">About Us</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link" id="navCourses">Courses</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link" id="navGallery">Gallery</a></li>
+          <li class="nav-item"><a href="#results" class="nav-link" id="navResults">Results</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link" id="navTestimonials">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" id="navContact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        <button class="btn btn-primary btn-enquire" id="btnHeaderEnquire" onclick="openModal('enquiryModal')">Enquire Now</button>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+        <li><a href="#courses" class="mobile-nav-link">Courses</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#results" class="mobile-nav-link">Results</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li class="mobile-drawer-btn">
+          <button class="btn btn-primary" onclick="openModal('enquiryModal')">Enquire Now</button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section" id="home">
+    <div class="section-container hero-grid">
+      
+      <!-- Hero Left: Content -->
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Shape Your <span class="text-navy">Future</span><br>
+          Achieve Your <span class="text-navy">Dreams</span>
+        </h1>
+        <p class="hero-subtitle">
+          Expert guidance, personalized attention and proven strategies to help you succeed.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#courses" class="btn btn-primary btn-hero-explore" id="btnHeroExplore">
+            Explore Courses <i class="fa-solid fa-arrow-right-long arrow-icon"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary btn-hero-contact" id="btnHeroContact">
+            Contact Us <i class="fa-solid fa-phone phone-icon"></i>
+          </a>
+        </div>
+
+        <!-- Quick Stats Strip -->
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="highlight-text">
+              <span class="highlight-number">10+</span>
+              <span class="highlight-label">Years of Excellence</span>
+            </div>
+          </div>
+
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i class="fa-solid fa-user-group"></i>
+            </div>
+            <div class="highlight-text">
+              <span class="highlight-number">5000+</span>
+              <span class="highlight-label">Students Trained</span>
+            </div>
+          </div>
+
+          <div class="highlight-item">
+            <div class="highlight-icon highlight-trophy">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="highlight-text">
+              <span class="highlight-number">95%</span>
+              <span class="highlight-label">Success Rate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right: Image & Decorative Graphic -->
+      <div class="hero-visual">
+        <!-- Decorative Dotted Grid -->
+        <div class="deco-dots-grid">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <!-- Golden Curved Backdrop -->
+        <div class="hero-shape-backdrop"></div>
+
+        <!-- Student Photo Container -->
+        <div class="hero-photo-wrapper">
+          <img src="assets/images/hero-student.jpg" alt="Smiling Indian student studying at Excel Coaching Center" class="hero-student-img">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT US SECTION ==================== -->
+  <section class="about-section" id="about">
+    <div class="section-container about-grid">
+      
+      <!-- About Left: Building Photo -->
+      <div class="about-image-col">
+        <div class="about-image-card">
+          <img src="assets/images/about-building.jpg" alt="Excel Coaching Center Premier Academy Building" class="about-building-img">
+        </div>
+      </div>
+
+      <!-- About Right: Content -->
+      <div class="about-content-col">
+        <span class="section-pill">About Us</span>
+        <h2 class="about-heading">Dedicated to Excellence in Education</h2>
+        <p class="about-desc">
+          At Excel Coaching Center, our mission is to provide quality education and mentorship to help students reach their full potential. Our experienced faculty and student-centric approach make learning effective and enjoyable.
+        </p>
+
+        <!-- 4 Pillars Grid -->
+        <div class="about-features-grid">
+          <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <h4 class="feature-title">Experienced<br>Faculty</h4>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <h4 class="feature-title">Personalized<br>Attention</h4>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i class="fa-regular fa-clipboard"></i>
+            </div>
+            <h4 class="feature-title">Regular<br>Assessments</h4>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h4 class="feature-title">Smart Learning<br>Environment</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== COURSES WE OFFER SECTION ==================== -->
+  <section class="courses-section" id="courses">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="section-pill">Our Programs</span>
+        <div class="pill-underline"></div>
+        <h2 class="section-title">Courses We Offer</h2>
+      </div>
+
+      <div class="courses-grid">
+        
+        <!-- Course 1: Foundation Courses -->
+        <div class="course-card">
+          <div class="course-icon-box bg-blue-tint">
+            <i class="fa-solid fa-book-open text-blue"></i>
+          </div>
+          <h3 class="course-title">Foundation Courses</h3>
+          <p class="course-desc">Strong foundation for students from class 6 to 10.</p>
+          <a href="#contact" class="course-link" onclick="prefillCourse('Foundation Courses')">
+            Learn More <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+
+        <!-- Course 2: Competitive Exams -->
+        <div class="course-card">
+          <div class="course-icon-box bg-green-tint">
+            <i class="fa-solid fa-bullseye text-green"></i>
+          </div>
+          <h3 class="course-title">Competitive Exams</h3>
+          <p class="course-desc">Coaching for JEE, NEET, UPSC, BANK, SSC & more.</p>
+          <a href="#contact" class="course-link" onclick="prefillCourse('Competitive Exams (JEE / NEET)')">
+            Learn More <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+
+        <!-- Course 3: School Coaching -->
+        <div class="course-card">
+          <div class="course-icon-box bg-amber-tint">
+            <i class="fa-solid fa-graduation-cap text-amber"></i>
+          </div>
+          <h3 class="course-title">School Coaching</h3>
+          <p class="course-desc">Subject-wise coaching for CBSE, ICSE & State Board.</p>
+          <a href="#contact" class="course-link" onclick="prefillCourse('School Coaching (CBSE / ICSE)')">
+            Learn More <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+
+        <!-- Course 4: Crash Courses -->
+        <div class="course-card">
+          <div class="course-icon-box bg-red-tint">
+            <i class="fa-regular fa-clock text-red"></i>
+          </div>
+          <h3 class="course-title">Crash Courses</h3>
+          <p class="course-desc">Short-term intensive courses for quick revision.</p>
+          <a href="#contact" class="course-link" onclick="prefillCourse('Crash Courses & Test Series')">
+            Learn More <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY SECTION ==================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="section-pill">Gallery</span>
+        <h2 class="section-title">Moments at Excel</h2>
+      </div>
+
+      <div class="gallery-row">
+        <!-- Photo 1 -->
+        <div class="gallery-thumb" onclick="openLightbox('assets/images/gallery-1.jpg', 'Focused Classroom Study Session')">
+          <img src="assets/images/gallery-1.jpg" alt="Excel students writing exams in classroom">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-thumb" onclick="openLightbox('assets/images/gallery-2.jpg', 'Interactive Concept Teaching on Whiteboard')">
+          <img src="assets/images/gallery-2.jpg" alt="Expert faculty teaching mathematics and science">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-thumb" onclick="openLightbox('assets/images/gallery-3.jpg', 'Annual Felicitation & Award Ceremony')">
+          <img src="assets/images/gallery-3.jpg" alt="Excel top rankers receiving merit certificates">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="gallery-thumb" onclick="openLightbox('assets/images/gallery-4.jpg', 'Career Guidance Seminar & Workshop')">
+          <img src="assets/images/gallery-4.jpg" alt="Students attending career counseling seminar in auditorium">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="gallery-thumb" onclick="openLightbox('assets/images/gallery-5.jpg', 'Modern Library Discussion & Reading')">
+          <img src="assets/images/gallery-5.jpg" alt="Students studying together in spacious library">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-footer-action text-center">
+        <button class="btn btn-outline" id="btnViewMoreGallery" onclick="openGalleryModal()">
+          View More Photos <i class="fa-regular fa-image ml-2"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RESULTS SECTION ==================== -->
+  <section class="results-section" id="results">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="section-pill">Our Results</span>
+        <div class="pill-underline"></div>
+        <h2 class="section-title">Our Students. Our Success.</h2>
+      </div>
+
+      <div class="results-grid">
+        
+        <div class="result-card">
+          <div class="result-num-wrapper">
+            <span class="result-number" data-target="98">98</span><span class="result-symbol">+</span>
+          </div>
+          <p class="result-label">Selections in<br>Top Colleges</p>
+        </div>
+
+        <div class="result-card">
+          <div class="result-num-wrapper">
+            <span class="result-number" data-target="95">95</span><span class="result-symbol">%</span>
+          </div>
+          <p class="result-label">Students<br>Achieved Target</p>
+        </div>
+
+        <div class="result-card">
+          <div class="result-num-wrapper">
+            <span class="result-number" data-target="5000">5000</span><span class="result-symbol">+</span>
+          </div>
+          <p class="result-label">Successful<br>Students</p>
+        </div>
+
+        <div class="result-card">
+          <div class="result-num-wrapper">
+            <span class="result-number" data-target="50">50</span><span class="result-symbol">+</span>
+          </div>
+          <p class="result-label">Competitive Exams<br>Cleared</p>
+        </div>
+
+        <div class="result-card">
+          <div class="result-num-wrapper">
+            <span class="result-number" data-target="10">10</span><span class="result-symbol">+</span>
+          </div>
+          <p class="result-label">Years of<br>Excellence</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS SECTION ==================== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="testimonial-badge">Testimonials</span>
+        <h2 class="section-title text-white">What Our Students Say</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “The faculty is amazing and the study material is very helpful. Excel Coaching Center helped me clear JEE with a good rank!”
+          </p>
+          <div class="testimonial-author">
+            <img src="assets/images/rahul.jpg" alt="Rahul Sharma" class="author-avatar">
+            <div class="author-info">
+              <h4 class="author-name">Rahul Sharma</h4>
+              <span class="author-tag">JEE AIR 2456</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “Excellent guidance, regular tests and personal attention helped me build confidence and score 95% in Board Exams.”
+          </p>
+          <div class="testimonial-author">
+            <img src="assets/images/anjali.jpg" alt="Anjali Patil" class="author-avatar">
+            <div class="author-info">
+              <h4 class="author-name">Anjali Patil</h4>
+              <span class="author-tag">12th (CBSE) – 95%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “Best coaching institute with a positive environment. I cleared NEET and achieved my dream of becoming a doctor.”
+          </p>
+          <div class="testimonial-author">
+            <img src="assets/images/priya.jpg" alt="Priya Singh" class="author-avatar">
+            <div class="author-info">
+              <h4 class="author-name">Priya Singh</h4>
+              <span class="author-tag">NEET 2023</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Pagination Dots -->
+      <div class="testimonial-dots">
+        <span class="dot"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT / ENQUIRY / MAP SECTION ==================== -->
+  <section class="contact-section" id="contact">
+    <div class="section-container contact-grid">
+      
+      <!-- Col 1: Get In Touch -->
+      <div class="contact-col get-in-touch-col">
+        <h3 class="contact-col-title">Get in Touch</h3>
+        
+        <ul class="contact-info-list">
+          <li class="info-item">
+            <i class="fa-solid fa-phone text-navy-icon"></i>
+            <a href="tel:+919876543210" class="info-link">+91 98765 43210</a>
+          </li>
+          <li class="info-item">
+            <i class="fa-solid fa-envelope text-navy-icon"></i>
+            <a href="mailto:info@excelcoaching.com" class="info-link">info@excelcoaching.com</a>
+          </li>
+          <li class="info-item address-item">
+            <i class="fa-solid fa-location-dot text-navy-icon"></i>
+            <span class="info-text">123, Education Street,<br>New Delhi – 110001</span>
+          </li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-links-row">
+          <a href="#" class="social-circle-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-circle-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-circle-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-circle-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Enquiry Form -->
+      <div class="contact-col enquiry-form-col">
+        <h3 class="contact-col-title">Enquiry Form</h3>
+        
+        <form class="enquiry-form" id="mainEnquiryForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-row-2">
+            <div class="form-group">
+              <input type="text" id="formName" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="formPhone" class="form-control" placeholder="Phone Number" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="formEmail" class="form-control" placeholder="Email Address" required>
+          </div>
+
+          <div class="form-group">
+            <div class="custom-select-wrapper">
+              <select id="formCourse" class="form-control select-control" required>
+                <option value="" disabled selected>Course Interested In</option>
+                <option value="Foundation Courses">Foundation Courses (Class 6-10)</option>
+                <option value="Competitive Exams (JEE / NEET)">Competitive Exams (JEE / NEET / UPSC)</option>
+                <option value="School Coaching (CBSE / ICSE)">School Coaching (CBSE / ICSE / State)</option>
+                <option value="Crash Courses & Test Series">Crash Courses & Fast-Track Revision</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-chevron"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <textarea id="formMessage" class="form-control textarea-control" rows="3" placeholder="Your Message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit-enquiry" id="btnSubmitEnquiry">
+            Submit Enquiry
+          </button>
+        </form>
+      </div>
+
+      <!-- Col 3: Our Location Map -->
+      <div class="contact-col location-map-col">
+        <h3 class="contact-col-title">Our Location</h3>
+        
+        <div class="map-container-card">
+          <!-- Stylized Google Map Frame -->
+          <div class="map-embed-wrapper">
+            <iframe 
+              title="Excel Coaching Center Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.384501257404!2d77.2308993!3d28.618671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b9237e63%3A0x2d52e5a40b9df3e4!2sPragati%20Maidan%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+            <!-- Map Overlay Pin Badge -->
+            <div class="map-overlay-badge">
+              <span class="map-badge-title">Excel Coaching Center</span>
+              <a href="https://maps.google.com" target="_blank" rel="noopener" class="map-badge-link">View larger map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER BOTTOM BAR ==================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-copyright">
+        © 2024 Excel Coaching Center. All Rights Reserved.
+      </div>
+      <div class="footer-links">
+        <a href="#privacy" onclick="showNotice('Privacy Policy', 'Your privacy is paramount at Excel Coaching Center. We do not sell or share student or parent data with any third parties.')">Privacy Policy</a>
+        <span class="footer-sep">|</span>
+        <a href="#terms" onclick="showNotice('Terms & Conditions', 'Enrollment is subject to verification of student academic records and institutional terms and conditions.')">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS & POPUPS ==================== -->
+
+  <!-- 1. Enquiry Modal -->
+  <div class="modal-backdrop" id="enquiryModal" onclick="closeModalOnBackdrop(event, 'enquiryModal')">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal('enquiryModal')" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <h3 class="modal-title">Book Free Counseling & Demo Class</h3>
+        <p class="modal-sub">Speak with our academic advisors and find the best coaching track for your goals.</p>
+      </div>
+      <form class="modal-form" onsubmit="handleModalSubmit(event)">
+        <div class="form-group">
+          <label class="form-label" for="mName">Student / Parent Name</label>
+          <input type="text" id="mName" class="form-control" placeholder="Enter full name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="mPhone">Phone Number</label>
+          <input type="tel" id="mPhone" class="form-control" placeholder="10-digit mobile number" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="mCourse">Target Program</label>
+          <select id="mCourse" class="form-control select-control" required>
+            <option value="Foundation Courses">Foundation Courses (Class 6-10)</option>
+            <option value="Competitive Exams (JEE / NEET)">Competitive Exams (JEE / NEET / UPSC)</option>
+            <option value="School Coaching (CBSE / ICSE)">School Coaching (CBSE / ICSE / State)</option>
+            <option value="Crash Courses & Test Series">Crash Courses & Fast-Track Revision</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Confirm Free Registration</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Lightbox Modal for Gallery -->
+  <div class="modal-backdrop lightbox-backdrop" id="lightboxModal" onclick="closeModalOnBackdrop(event, 'lightboxModal')">
+    <div class="lightbox-content">
+      <button class="modal-close-btn lightbox-close" onclick="closeModal('lightboxModal')" aria-label="Close preview">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img src="" alt="Gallery Preview" id="lightboxImage" class="lightbox-img">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- 3. Notification Toast -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <div class="toast-text-content">
+      <h4 class="toast-title" id="toastTitle">Thank You!</h4>
+      <p class="toast-msg" id="toastMsg">Your enquiry has been received. Our counselor will call you shortly.</p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
