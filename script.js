@@ -9,7 +9,7 @@ function initFooterYear() {
   const copyrightElem = document.querySelector('.footer-copyright');
   if (copyrightElem) {
     const year = new Date().getFullYear();
-    copyrightElem.innerHTML = `&copy; ${year} Excel Coaching Center. All Rights Reserved.`;
+    copyrightElem.innerHTML = `&copy; ${year} advancxsolution. All Rights Reserved.`;
   }
 }
 
